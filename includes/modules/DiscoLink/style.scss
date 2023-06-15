@@ -1,0 +1,78 @@
+.disco_link {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+  z-index: 1000;
+  font-family: Raleway, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  // alternatively: clip to original size without overlap
+  //overflow: hidden;
+
+  a {
+    img {
+      transition: all 0.3s ease-out 0s;
+      display: block;
+      max-width: 240px;
+    }
+  }
+
+  .overlay {
+    z-index: 1020;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.0em;
+
+    .title {
+      font-size: 1.75em;
+      transition: all 0.3s ease-out 0s;
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .text {
+      background-color: #FF0099;
+      font-weight: bold;
+      padding: 2px 16px 8px 16px;
+    }
+
+    .title-bottom {
+      top: auto;
+      bottom: 0%;
+      text-align: left;
+    }
+  }
+
+  &:hover {
+    z-index: 1010;
+    //filter: saturate(200%);
+
+    a {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .overlay {
+      //line-height: 1.1rem;
+
+      .title {
+        text-decoration: underline;
+        // slightly bigger than img scale for a z-parallax effect
+        transform: translateY(-50%) scale(1.12);
+      }
+
+      .title-bottom {
+        top: auto;
+        bottom: 0%;
+      }
+    }
+  }
+}
