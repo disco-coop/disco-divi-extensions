@@ -1,0 +1,14 @@
++ README.md
++ *.json
++ *.php
++ *.lock
++ includes/
++ includes/**
++ languages/
++ languages/**
++ scripts/
++ scripts/**
++ styles/
++ styles/**
+- *
+- .*
