@@ -5,31 +5,29 @@ import React, {Component, Fragment} from 'react';
 import './style.css';
 
 
-class DiscoLink extends Component {
+class PageList extends Component {
 
-  static slug = 'disco_link';
+  static slug = 'page_list';
 
   render() {
-    const Content = this.props.content;
-    const URL = this.props.url;
-    const SRC = this.props.src;
-    const AltText = this.props.alt;
+    const Parent = this.props.parent;
+    const cnt = this.props.cnt;
+    const columns = this.props.columns;
 
     return (
       <Fragment>
-        <a href={URL}>
+        <a href="/">
           <div className="overlay">
             <div className="title">
             <span className="text">
-              <Content/>
+              Show {cnt} pages under {Parent} in {columns} columns
             </span>
             </div>
           </div>
-          <img src={SRC} alt={AltText}/>
         </a>
       </Fragment>
     );
   }
 }
 
-export default DiscoLink;
+export default PageList;

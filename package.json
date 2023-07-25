@@ -1,6 +1,6 @@
 {
-  "name": "custom-divi-extensions",
-  "version": "0.1.0",
+  "name": "disco-divi-extensions",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "divi-scripts": "1.0.3",

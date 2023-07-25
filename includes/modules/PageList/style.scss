@@ -1,4 +1,4 @@
-.disco_link {
+.page_list {
   display: inline-block;
   position: relative;
   transition: all 0.3s ease-out 0s;
@@ -39,7 +39,7 @@
     }
 
     .text {
-      background-color: #FF0099;
+      background-color: #000000;
       font-weight: bold;
       padding: 2px 16px 8px 16px;
       box-decoration-break: clone;
@@ -68,6 +68,10 @@
         text-decoration: underline;
         // slightly bigger than img scale for a z-parallax effect
         transform: translateY(-50%) scale(1.12);
+      }
+
+      .text {
+        background-color: #FF0099;
       }
 
       .title-bottom {
