@@ -1,0 +1,26 @@
+import $ from 'jquery';
+
+class DISCO_FilterablePostList {
+    constructor() {
+        // Hide filtered lists
+        $('[class*=\"-category-list\"]').hide();	
+
+    }
+
+    filterPosts(){
+        
+        //console.log('hide');
+        $('.disco-active-list').fadeOut(500);
+        $(`.disco-\${category}-category-list`).fadeIn(500);
+        $('.disco-active-list').removeClass('disco-active-list');
+        $(`.disco-\${category}-category-list`).addClass('disco-active-list');
+        // setTimeout(() => {
+        // 	//console.log('timeout,show');
+        // 	$(`.disco-\${category}-category-list`).addClass('disco-active-list');
+        // 	$(`.disco-\${category}-category-list`).fadeIn(500);
+        // },510)
+        
+    }
+}
+
+export default DISCO_FilterablePostList

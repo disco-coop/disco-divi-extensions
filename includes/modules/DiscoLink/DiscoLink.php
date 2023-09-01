@@ -43,8 +43,7 @@ class DISCO_DiscoLink extends ET_Builder_Module
 				'type' => 'text',
 				'option_category' => 'basic_option',
 				'depends_show_if' => 'off',
-				'description' => esc_html__('If you would like your image to be a link, input your destination URL here. No l
-ink will be created if this field is left blank.', 'et_builder'),
+				'description' => esc_html__('If you would like your image to be a link, input your destination URL here. No link will be created if this field is left blank.', 'et_builder'),
 				'toggle_slug' => 'main_content',
 				'dynamic_content' => 'url',
 			),

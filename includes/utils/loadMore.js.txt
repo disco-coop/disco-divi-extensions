@@ -1,0 +1,24 @@
+import $ from 'jquery';
+
+class LoadMore {
+    constructor() {
+        this.ajaxUrl = siteConfig?.ajaxUrl ?? '';
+        this.ajaxNonce = siteConfig?.ajax_nonce ?? '';
+    }
+
+    handleLoadMorePosts(){
+        $.ajax({
+            url: this.ajaxUrl,
+            type: 'post',
+            data: {
+                action: 'load_more',
+                ajax_nonce: this.ajaxNonce
+            },
+            success: (response) => {},
+            error: (response) => {},
+
+        })
+    }
+}
+
+export default LoadMore

@@ -1,0 +1,63 @@
+.page_list {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+  z-index: 1010;
+  font-family: Raleway, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.page_list a img {
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  max-width: 100%;
+}
+.page_list .overlay {
+  z-index: 1020;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.page_list .overlay .title {
+  font-size: 1.75em;
+  line-height: 120%;
+  transition: all 0.3s ease-out 0s;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.page_list .overlay .text {
+  background-color: #000000;
+  font-weight: bold;
+  padding: 2px 16px 8px 16px;
+  box-decoration-break: clone;
+}
+.page_list .overlay .text > div {
+  display: inline-block;
+}
+.page_list .overlay .title-bottom {
+  top: auto;
+  bottom: 0%;
+  text-align: left;
+}
+.page_list a:hover img {
+  transform: scale(1.1);
+}
+.page_list a:hover .overlay .title {
+  text-decoration: underline;
+  transform: translateY(-50%) scale(1.12);
+}
+.page_list a:hover .overlay .text {
+  background-color: #FF0099;
+}
+.page_list a:hover .overlay .title-bottom {
+  top: auto;
+  bottom: 0%;
+}
+
+/*# sourceMappingURL=style.css.map */
